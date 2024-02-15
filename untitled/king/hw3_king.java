@@ -1,5 +1,4 @@
 package king;
-
 import java.util.Random;
 import java.util.Scanner;
 
@@ -13,20 +12,34 @@ import java.util.Scanner;
 //Пипи1 - 1 хп 5 дмг / 0 голды
 //Пипи2 - 15 хп 10 дмг / 50 голды
 //Пипи3 - 20 хп 50 дмг / 100 голды
-public class hw3_king {
 
-    public class King { int kinghp = 1; int kinggold = 30; }
-    public class Ally { int allycost; int allyhp; int allydmg;}
-    public static class Creep { int creephp; int creepdmg; int creepdrop; }
+class King {
+    public static int kinghp = 1;
+    public static int kinggold = 30;
+
+    public King(int kinghp, int kinggold) {
+    }
+}
+
+public class hw3_king {
     public static void main(String[] args)
     {
         Random gp = new Random();
         int number = gp.nextInt(8) + 1;
-        if (number == 2) {  System.out.println("Вас настигла Божья кара... рип"); System.exit(0); }
+        if (number == 2) {  System.out.println("Вас настигла Божья кара..."); System.exit(0); }
 
-        System.out.println("""
-                0 - писи
-                1 - Статы короля
-                2 - 
-                """);
-}}
+        while (true) {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("""
+                    1 - Стат. КОРОЛЯ
+                    2 - Стат. ОППОНЕНТА
+                    0 - Выход
+                    """);
+            int menu = scanner.nextInt();
+            if (menu == 1) { System.out.println("dffds"); }
+            else if (menu == 2) { System.out.println("dfsfd"); }
+            else if (menu == 0) { System.out.println("ПОКА!"); System.exit(0);}
+        }
+}
+}
