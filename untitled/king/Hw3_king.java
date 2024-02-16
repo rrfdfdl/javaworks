@@ -21,7 +21,7 @@ class King {
     }
 }
 
-public class hw3_king {
+public class Hw3_king {
     public static void main(String[] args)
     {
         Random gp = new Random();

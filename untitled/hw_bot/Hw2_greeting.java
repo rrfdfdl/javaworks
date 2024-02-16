@@ -3,7 +3,7 @@ package hw_bot;
 import java.time.LocalTime;
 import java.util.Scanner;
 
-public class hw2_greeting {
+public class Hw2_greeting {
         public static void main(String[] args)
         {
             System.out.print("Введите ваше имя: ");

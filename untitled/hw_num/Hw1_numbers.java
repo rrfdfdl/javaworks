@@ -2,7 +2,7 @@ package hw_num;
 
 import java.util.Random;
 import java.util.Scanner;
-public class hw1_numbers {
+public class Hw1_numbers {
         public static void main(String[] args)
         {
             Random random = new Random();

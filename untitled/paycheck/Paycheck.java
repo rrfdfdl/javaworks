@@ -1,6 +1,6 @@
 package paycheck;
 import java.util.Scanner;
-public class paycheck {
+public class Paycheck {
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
 
