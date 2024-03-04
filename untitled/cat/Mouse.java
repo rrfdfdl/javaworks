@@ -21,9 +21,5 @@ public class Mouse {
     public Random getMouseSpeedRand() {
         return mouseSpeedRand;
     }
-
-    public void setMouseSpeedRand(Random mouseSpeedRand) {
-        this.mouseSpeedRand = mouseSpeedRand;
-    }
 }
 

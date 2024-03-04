@@ -6,9 +6,9 @@ public class Kitty {
 
     private String name;
     private int weight;
-    private int speed;
+    public static int speed;
     Random kittyRand = new Random();
-    private int capturedmice;
+    public static int capturedmice;
 
     public Kitty(String name) {
         this.name = name;

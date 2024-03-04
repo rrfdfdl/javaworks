@@ -18,12 +18,24 @@ public class MainApp {
 
         System.out.print("Назовите вашего кота: ");
         String name = scan.next();
+
         Kitty cat1 = new Kitty(name);
 
         System.out.println("ИМЯ: " + cat1.getName() + "\nВЕС: " + cat1.getWeight() + "\nСКОРОСТЬ: " + cat1.getSpeed() + "\nПОЙМАННЫЕ МЫШИ: " + cat1.getCapturedmice());
 
         Mouse ms1 = new Mouse();
-        ms1.getMouseSpeedRand();
+        System.out.println(ms1.getMouseSpeed());
+
+        int CSpeed = Kitty.speed;
+        int MSpeed = ms1.mouseSpeed;
+
+        System.out.println("1 - ПОЙМАТЬ МЫШЬ");
+        int sisi = scan.nextInt();
+        if (sisi == 1) {
+            if (CSpeed > MSpeed) { System.out.println("ПОРНО"); Kitty.capturedmice ++; }
+            else if (CSpeed < MSpeed) {System.out.println("ЛОХ НЕ ПОЙМАЛ МЫШ");}
+        }
+        }
 //      while(cat1.getWeight() >= 100) { System.out.println("\n![ вы стали МАКСИМАЛЬНО ОГРОМНЫМ ОТКОРМЛЕННЫМ КОТОМ ]!"); System.exit(0); }
     }
-}
+
